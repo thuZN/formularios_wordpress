@@ -19,7 +19,7 @@ app = Flask(__name__)
 @app.route('/inserir_dados', methods=['POST'])
 def inserir_dados():
     try:
-        dados_json = request.get_json('teste.csv')
+        dados_json = request.get_json()
 
         # Validação dos campos obrigatórios
         if not all(k in dados_json for k in ['nome', 'email', 'telefone', 'cnpj']):
