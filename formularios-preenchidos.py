@@ -6,11 +6,11 @@ app = Flask(__name__)
 
 # Conexão com o banco
 wordpress_bd = mysql.connector.connect(
-    host='SEU_HOST',
-    user='SEU_USUARIO',
-    password='SUA_SENHA',
-    port=3306,
-    database='SEU_BANCO'
+    host='localhost',
+    user='root',
+    password='',
+    port=3307,
+    database='formularios_wordpress'
 )
 cursor = wordpress_bd.cursor()
 
